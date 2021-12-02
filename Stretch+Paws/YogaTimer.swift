@@ -20,16 +20,12 @@ class YogaTimer: ObservableObject {
     // Start the timer
     func startTimer() {
         timerActive = true
-        yogaTimer = Timer.init(timeInterval: 1, repeats: true, block: { Timer in
+        yogaTimer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true, block: { Timer in
             // Remove a second from the timer duration & loop
             self.timerDuration -= 1
             // If the timer gets to 0, stop the timer
             if self.timerDuration == 0 {
-                self.stopTimer()
-            }
-        })
-        
-    }
+                self.stopTimer()}})}
     // Pause the timer
     func pauseTimer() {
         timerActive = false

@@ -101,7 +101,7 @@ struct TimerOpenView: View {
             Text(yogaTimer.timerDuration < 10 ? "00:0\(yogaTimer.timerDuration)" : "00:\(yogaTimer.timerDuration)")
                 .font(.system(size: 96))
             Spacer()
-            Button{
+            Button(){
                 yogaTimer.startTimer()
             } label: {
                 Text("Start the timer")
