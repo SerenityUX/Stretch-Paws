@@ -40,6 +40,8 @@ struct DetailView: View {
                         .foregroundColor(Color("Highlight"))
                         .fontWeight(.medium)
                     Text(pose.topTip)
+                            .padding(.bottom, 40)
+                    Spacer()
                     }
                 }.padding(.horizontal, 20)
             }
